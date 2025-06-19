@@ -13,6 +13,8 @@
 }
 
 .project-heading h1 {
+  max-width: 100%;
+  
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 10px;
@@ -28,10 +30,13 @@
 
 .project-heading p {
   font-size: 16px;
-  max-width: 700px;
+  max-width: 800px;
+  padding: 10px;
+  border-radius: 80px;
   margin: 0 auto;
   line-height: 1.6;
   color: var(--card);
+  background-color: var(--link);
 }
 
 .projects-grid {
