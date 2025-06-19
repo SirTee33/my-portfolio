@@ -1,8 +1,7 @@
 .projects-section {
-  padding: 40px 20px;
   background-color: var(--bg);
   color: var(--text);
-  padding: 2rem; 
+  padding: 10px 10px; 
   gap: 2rem;
 }
 .project-heading {
@@ -13,11 +12,9 @@
 }
 
 .project-heading h1 {
-  max-width: 100%;
-  
   font-size: 28px;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 18px;
   color: var(--accent);
 }
 .project-heading p {
