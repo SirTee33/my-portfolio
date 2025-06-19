@@ -33,7 +33,6 @@ const Projects = () => {
     <section className="projects-section">
       <section className="project-heading">
         <h1>Code in Action</h1>
-        <div className="divider"></div>
         <p>
           Real-world applications developed using modern full stack technologies.
           From user-friendly interfaces to robust backend systems — explore my deployed builds.
