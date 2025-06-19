@@ -1,0 +1,87 @@
+.home-container {
+  display: flex;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: transparent;
+  color: var(--text-color);
+  text-align: justify; 
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-card {
+  max-width: 600px;
+  background-color: var(--card);
+  color: var(--text);
+  padding: 18px 28px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  margin-bottom: 1rem;
+  border: 3px solid var(--accent);
+}
+.intro-card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.8;
+}
+
+.intro-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  opacity: 0.8;
+}
+.animated-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+  font-weight: bold;
+  animation: floatText 4s ease-in-out infinite, fadeIn 2s ease-in;
+}
+@keyframes floatText {
+  0% { transform: translateY(0px); }
+  50% { transform: translateX(+25px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 0 25px 0 25px;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #004c99;
+}
+
+@media (max-width: 600px) {
+  .intro h1 {
+    font-size: 2rem;
+  }
+
+  .intro h2 {
+    font-size: 1.3rem;
+  }
+
+  .intro p {
+    font-size: 1rem;
+  }
+}

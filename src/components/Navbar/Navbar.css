@@ -1,0 +1,189 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: hsl(240, 100%, 7%);
+  color: var(--bg-color);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: var(--shadow);
+  transition: top 0.3s ease;
+  top: 0;
+} 
+.navbar img{
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+}
+
+.navbar-title {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+}
+
+.hamburger .bar {
+  width: 30px;
+  height: 4px;
+  background-color:goldenrod;
+  transition: all 0.3s ease;
+}
+
+/* Open animation */
+.hamburger .bar.open:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger .bar.open:nth-child(2) {
+  opacity: 0;
+}
+.hamburger .bar.open:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: var(--text-nav-color);
+  font-weight: 500;
+}
+
+.navbar-links a:hover {
+  color: var(--primary-color);
+}
+
+.theme-toggle {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .navbar-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--bg-color);
+    flex-direction: column;
+    width: 100%;
+    font-size: 34px;
+    display: none;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: var(--shadow);
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+  
+  .navbar-links a {
+    color: var(--text-color);
+    padding: 0.8rem 1rem;
+  }
+  .theme-toggle {
+    padding: 0.8rem 1rem;
+  }
+}
+.navbar.hide {
+  top: -80px; /* hides navbar when scrolling down */
+}
+
+.theme-icon {
+  margin-left: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.tooltip:hover {
+  transform: scale(1.1);
+}
+
+/* .icon-svg {
+  width: 24px;
+  height: 24px;
+  color: var(--primary-color);
+  transition: color 0.3s ease;
+} */
+
+.tooltip-text {
+  visibility: hidden;
+  width: 150px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 140%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  font-size: 0.75rem;
+  transition: opacity 0.4s ease;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+/* Base SVG styling */
+.icon-svg {
+  width: 24px;
+  height: 24px;
+  color: var(--primary-color);
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+/* Add animation when toggled */
+.icon-svg.animate-toggle {
+  transform: rotate(180deg);
+  opacity: 0.5;
+}
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 0px rgba(0, 123, 255, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 0px rgba(0, 123, 255, 0.6);
+  }
+}
+
+/* Apply animation when active */
+.navbar.glow {
+  animation: glow 0.8s ease-in-out;
+}

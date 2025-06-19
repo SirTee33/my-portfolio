@@ -1,0 +1,121 @@
+.contact-container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: var(--card);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  color: var(--text);
+}
+
+.contact-header h1{
+  margin-top: 5px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 28px;
+  color: var(--link);
+}
+
+.contact-header p {
+  text-align: center;
+  font-size: 18px;
+}
+.contact-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: var(--link);
+}
+.contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: var(--text);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 95%;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: var(--bg);
+  color: var(--text);
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--accent);
+  outline: none;
+}
+
+.send-btn {
+  background-color: var(--accent);
+  color: #fff;
+  padding: 12px 24px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  width: 100%;
+}
+
+.send-btn:hover {
+  background-color: #005fa3;
+}
+.find-me {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.find-me h2 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: var(--accent);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.social-icons a {
+  color: var(--accent);
+  font-size: 1.4rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+  color: #ff4b2b; /* Highlight on hover */
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  color: var(--text);
+}
+
+.contact-details p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+}
+
+.contact-icon {
+  font-size: 1.2rem;
+  color: var(--accent);
+}
