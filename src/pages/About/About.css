@@ -46,7 +46,7 @@
 
 .about-intro,
 .about-projects,
-.about-values {
+.about-values, .about-connect {
   font-size: 1.1rem;
   margin-bottom: 1rem;
   text-align: justify;

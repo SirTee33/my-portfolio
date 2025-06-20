@@ -91,12 +91,12 @@ function About() {
       </div>
 
       <div className='project'>
-        <h3>What I'av Built</h3>
+        <h3>Work Showcase</h3>
         <p className='about-projects'>
-          One of my key projects is <strong>Iya-Ilu</strong> — an educational site showcasing the Nigerian talking drum. It features image and video galleries, filtered drum types, and a fully responsive design.
+          One of my key projects is <strong>Iya-Ilu</strong> an educational site showcasing the Nigerian talking drum. It features image and video galleries, filtered drum types, and a fully responsive design.
         </p>
-        <p>
-          I've also worked on an e-commerce site for <strong>Happy-Glams Beauty</strong> that includes product listings, a gallery, cart functionality, and theme switching.
+        <p className='about-projects'>
+          I've also worked on an e-commerce site for <strong>Happy-Glams Beauty</strong> that includes product listings, a gallery, and cart functionality.
         </p>
       </div>
       <div className='value'>

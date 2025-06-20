@@ -74,6 +74,9 @@
 }
 
 @media (max-width: 600px) {
+  .intro-card {
+    max-width: 1000px;
+  }
   .intro h1 {
     font-size: 2rem;
   }
