@@ -29,6 +29,7 @@
   font-size: 2.5rem;
   margin-bottom: 1rem;
   text-align: center;
+  
   background-color: var(--link);
   border-radius: 60%;
 }
@@ -48,7 +49,8 @@
 .about-values {
   font-size: 1.1rem;
   margin-bottom: 1rem;
-  text-align: center;
+  text-align: justify;
+  justify-content: center;
 }
 .about-connect a{
   text-decoration: none;
