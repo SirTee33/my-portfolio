@@ -3,13 +3,13 @@ import './About.css';
 import { Icon } from '@iconify/react';
 import reactIcon from '@iconify-icons/logos/react';
 import html5Icon from '@iconify-icons/logos/html-5';
-//import css3Icon from '@iconify-icons/logos/css-3';
+import css3Icon from '@iconify-icons/logos/css-3';
 import javascriptIcon from '@iconify-icons/logos/javascript';
 import nodejsIcon from '@iconify-icons/logos/nodejs-icon';
 import expressIcon from '@iconify-icons/simple-icons/express';
 import mongodbIcon from '@iconify-icons/logos/mongodb-icon';
 import gitIcon from '@iconify-icons/logos/git-icon';
-import githubIcon from '@iconify-icons/mdi/github';
+import githubCircle from '@iconify-icons/mdi/github';
 import postmanIcon from '@iconify-icons/logos/postman-icon';
 import vscodeIcon from '@iconify-icons/logos/visual-studio-code';
 import tailwindIcon from '@iconify-icons/logos/tailwindcss-icon';
@@ -40,10 +40,6 @@ function About() {
             <span>HTML</span>
           </div>
           <div className="tech-item">
-            <Icon icon={reactIcon} width="40" height="40" />
-            <span>CSS</span>
-          </div>
-          <div className="tech-item">
             <Icon icon={javascriptIcon} width="40" height="40" />
             <span>JavaScript</span>
           </div>
@@ -54,7 +50,7 @@ function About() {
             <span>Node.js</span>
           </div>
           <div className="tech-item">
-            <Icon icon={expressIcon} width="40" height="40" />
+            <Icon icon={expressIcon} width="40" height="40" style={{ color: "#0ea5e9" }} />
             <span>Express</span>
           </div>
 
@@ -70,7 +66,7 @@ function About() {
             <span>Git</span>
           </div>
           <div className="tech-item">
-            <Icon icon={githubIcon} width="40" height="40" />
+            <Icon icon={githubCircle} width="40" height="40" style={{ color: "#0ea5e9" }} />
             <span>GitHub</span>
           </div>
           <div className="tech-item">
@@ -84,7 +80,7 @@ function About() {
 
           {/* Styling */}
           <div className="tech-item">
-            <Icon icon={reactIcon} width="40" height="40" />
+            <Icon icon={css3Icon} width="40" height="40" />
             <span>External CSS</span>
           </div>
           <div className="tech-item">
@@ -115,7 +111,7 @@ function About() {
           I’m always open to freelance projects, internships, or collaborations. Reach out via the <a href="/contact" className='connect-link'>Let's Connect</a>.
         </p>
       </div>
-    </section>
+    </section >
   );
 }
 
