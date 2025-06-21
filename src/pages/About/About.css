@@ -29,7 +29,6 @@
   font-size: 2.5rem;
   margin-bottom: 1rem;
   text-align: center;
-  
   background-color: var(--link);
   border-radius: 60%;
 }
@@ -39,7 +38,7 @@
 
 .about-container h3 {
   font-size: 1.75rem;
-  margin-top: 2.5rem;
+  margin-top: 1rem;
   margin-bottom: 0.8rem;
   color: var(--primary-color);
 }
@@ -87,13 +86,14 @@
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 1.5rem;
   margin-top: 1rem;
+  margin-bottom: 30px;
 }
 
 .tech-item {
   background-color: var(--section-bg);
   border: 1px solid var(--border-color);
   padding: 1rem;
-  border-radius: 8px;
+  border-radius: 18px;
   text-align: center;
   transition: transform 0.3s ease;
 }
