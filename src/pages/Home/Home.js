@@ -17,7 +17,7 @@ const Home = () => {
           <strong> React</strong>, <strong>Node.js</strong>, and <strong>MongoDB</strong>. With a passion for solving real-world problems through code, I’ve developed full-stack solutions that are efficient, user-friendly, and performance-driven. From designing interactive user interfaces to building RESTful APIs and managing databases, I bring both frontend and backend expertise to every project.
         </p>
         <a href="/projects" className="btn">View project<Icon
-          icon={arrowRight} width="20" style={{ marginLeft: '8px' }} />
+          icon={arrowRight} width="20" className='arrow-icon' />
         </a>
       </div>
     </section>

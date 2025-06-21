@@ -7,8 +7,8 @@ const projectData = [
     description: 'An e-commerce platform for makeup services and products.',
     stack: ['React', 'Node.js', 'Express', 'MongoDB'],
     image: "/images/Happy Glam.png",
-    code: 'https://github.com/SirTee33/Happy_Glams',
-    demo: 'https://happy-glams.onrender.com',
+    code: 'https://github.com/SirTee33/Happy-Glams',
+    demo: 'https://happyglams.vercel.app',
   },
   {
     title: 'Iya-Ilu',
@@ -23,7 +23,7 @@ const projectData = [
     description: 'A management tool for pharmaceutical reports and compliance.',
     stack: ['React', 'Express', 'MongoDB'],
     image: "/images/Pharma.png",
-    code: 'https://github.com/SirTee33/PharmaProjectManager',
+    code: 'https://github.com/SirTee33/pharma-app',
     demo: 'https://pharma-manager.onrender.com',
   },
 ];
@@ -50,7 +50,7 @@ const Projects = () => {
               ))}
             </div>
             <div className="project-links">
-              <a href={project.github} target="_blank" rel="noopener noreferrer" className='code'>Code</a>
+              <a href={project.code} target="_blank" rel="noopener noreferrer" className='code'>Code</a>
               <a href={project.demo} target="_blank" rel="noopener noreferrer" className='demo'>Live Demo</a>
             </div>
           </div>

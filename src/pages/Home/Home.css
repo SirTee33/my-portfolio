@@ -61,7 +61,7 @@
   display: inline-block;
   padding: 0.6rem 1.5rem;
   background-color: var(--accent);
-  color: #fff;
+  color: var(--card);
   text-decoration: none;
   border-radius: 0 25px 0 25px;
   margin-top: 10px;
@@ -88,4 +88,9 @@
   .intro p {
     font-size: 1rem;
   }
+}
+.arrow-icon {
+  vertical-align: middle;
+  margin-left: 8px;
+  color: var(--card);
 }

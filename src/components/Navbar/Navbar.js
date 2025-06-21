@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import logo from '../../images/My logo.png'
+import logo from '../../images/My logo 2.png'
 
 
 const Navbar = ({ toggleTheme, theme }) => {
