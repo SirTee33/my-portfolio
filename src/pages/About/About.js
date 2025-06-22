@@ -108,7 +108,7 @@ function About() {
       <div className='connect'>
         <h3>Let’s Connect</h3>
         <p className="about-connect">
-          I’m always open to freelance projects, internships, or collaborations. Reach out via the <a href="/contact" className='connect-link'>Let's Connect ➡</a>
+          I’m always open to freelance projects, internships, or collaborations. Reach out via the <a href="/contact" className='connect-link'>Find Me ➡</a>
         </p>
       </div>
     </section >

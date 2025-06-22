@@ -24,7 +24,7 @@ const projectData = [
     stack: ['React', 'Express', 'MongoDB'],
     image: "/images/Pharma.png",
     code: 'https://github.com/SirTee33/pharma-app',
-    demo: 'https://pharma-manager.onrender.com',
+    demo: 'https://pharma-app.onrender.com',
   },
 ];
 
