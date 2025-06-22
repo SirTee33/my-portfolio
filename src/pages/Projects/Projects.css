@@ -70,6 +70,7 @@
   display: inline-block;
   border-radius: 5px;
   font-size: 0.85rem;
+  font-weight: bold;
 }
 .project-links {
   cursor: pointer;
