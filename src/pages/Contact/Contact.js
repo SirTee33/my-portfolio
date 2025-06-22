@@ -87,7 +87,7 @@ const Contact = () => {
             </p>
             <p>
               <Icon icon={locationIcon} className="contact-icon" />
-              <span><strong>Location:</strong> Nigeria</span>
+              <span><strong>Location:</strong>Lagos, Nigeria</span>
             </p>
           </div>
         </div>
