@@ -64,7 +64,7 @@
 
 .tech {
   background-color: var(--accent);
-  color: white;
+  color: var(--card);
   padding: 5px 10px;
   margin: 5px 5px 5px 0;
   display: inline-block;
@@ -87,22 +87,22 @@
   background-color: turquoise; */
 }
 .code {
-  background-color: #ff9800;
+  background-color: var(--project);
   color: white;
   padding: 5px 14px;
   border-radius: 15px;
   text-decoration: none;
 }
 .code:hover {
-  border-bottom: 2px solid #3a82f7;
+  border-bottom: 2px solid var(--project-hover);
 }
 .demo {
-  background-color: var(--primary-color);
+  background-color: var(--project);
   color: white;
   padding: 5px 14px;
   border-radius: 15px;
   text-decoration: none;
 }
 .demo:hover {
-  border-bottom: 2px solid #ff9800;
+  border-bottom: 2px solid var(--project-hover);
 }

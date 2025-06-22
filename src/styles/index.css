@@ -31,6 +31,8 @@
   --text-color: #eee; 
   --primary-color: #3a82f7;
   --grid-line: %23e0e0e0; /* light gray for light mode */
+  --project: #ff9800;
+  --project-hover: #3a82f7;
 }
 
 [data-theme='light'] {
@@ -48,6 +50,8 @@
   --section-text: #f5f5f5;
   --accent-color: #6ea8ff;
   --border-color: #444; /* dark grid lines for dark mode */
+  --project: #007acc;
+  --project-hover: #ff9800;
 }
 [data-theme="dark"] {
   --section-bg: #ffffff;
