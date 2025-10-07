@@ -120,10 +120,12 @@
 }
 .connect-link {
   font-weight: bold;
+  font-size: 20px;
+  margin-left: 10px;
   color: var(--accent);
   transition: color 0.3s ease;
   text-decoration: none;
 }
 .connect-link:hover {
-  color: hsl(9, 100%, 38%);
+  color: var(--project);
 }

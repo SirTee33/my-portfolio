@@ -69,7 +69,7 @@
 }
 
 .send-btn:hover {
-  background-color: #005fa3;
+  background-color: var(--project);
 }
 .find-me {
   margin-top: 40px;
@@ -97,7 +97,7 @@
 
 .social-icons a:hover {
   transform: scale(1.1);
-  color: #ff4b2b; /* Highlight on hover */
+  color: var(--project); /* Highlight on hover */
 }
 
 .contact-details {
