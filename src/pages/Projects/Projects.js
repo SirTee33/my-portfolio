@@ -32,7 +32,7 @@ const Projects = () => {
   return (
     <section className="projects-section">
       <section className="project-heading">
-        <h1>Code in Action</h1>
+        {/* <h1>Code in Action</h1> */}
         <p>
           Real world applications developed using modern full stack technologies.
           From user-friendly interfaces to robust backend systems, explore my deployed builds.

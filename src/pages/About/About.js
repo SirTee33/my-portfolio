@@ -20,7 +20,7 @@ import tailwindIcon from '@iconify-icons/logos/tailwindcss-icon';
 function About() {
   return (
     <section className="about-container">
-      <h2>Who I Am</h2>
+      {/* <h2>Who I Am</h2> */}
       <div className='about'>
         <p className='about-intro'>
           I'm Taiwo Ojo, a creative and detailed-oriented Full Stack Developer with passion for building user-focused digital experiences. I love turning ideas into interactive and functional solutions that make an impact.

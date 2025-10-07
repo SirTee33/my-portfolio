@@ -71,7 +71,7 @@
 }
 
 .btn:hover {
-  background-color: #004c99;
+  background-color: var(--project);
 }
 
 @media (max-width: 600px) {

@@ -37,7 +37,7 @@ function App() {
 
     document.body.style.backgroundImage = `url("data:image/svg+xml,${gridSVG}")`;
     document.body.style.backgroundColor = bgColor;
-    document.body.style.backgroundSize = '80px 80px';
+    document.body.style.backgroundSize = '50px 50px';
   }, [theme]);
 
   return (
