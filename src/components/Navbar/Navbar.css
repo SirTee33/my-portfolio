@@ -24,7 +24,46 @@
   color: var(--primary-color);
   font-weight: bold;
 }
+.nav-icon {
+  font-size: 1.3rem;
+  margin-right: 8px;
+}
 
+/* Unique colors for each icon */
+.home-icon {
+  color: #1e90ff; /* Dodger blue */
+}
+
+.about-icon {
+  color: #ff69b4; /* Pink */
+}
+
+.project-icon {
+  color: #ffa500; /* Orange */
+}
+
+.contact-icon {
+  color: #32cd32; /* Lime green */
+}
+
+/* Responsive icons visibility */
+@media (max-width: 768px) {
+  .navbar-links.active a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .navbar-links a {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .nav-text {
+    font-size: 1rem;
+  }
+}
 .hamburger {
   display: none;
   flex-direction: column;
@@ -129,13 +168,6 @@
   transform: scale(1.1);
 }
 
-/* .icon-svg {
-  width: 24px;
-  height: 24px;
-  color: var(--primary-color);
-  transition: color 0.3s ease;
-} */
-
 .tooltip-text {
   visibility: hidden;
   width: 150px;
@@ -186,4 +218,33 @@
 /* Apply animation when active */
 .navbar.glow {
   animation: glow 0.8s ease-in-out;
+}
+
+.navbar-links.active a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Show icons only on small screens */
+@media (max-width: 768px) {
+  .nav-icon {
+    display: inline-block;
+  }
+
+  .nav-text {
+    display: inline-block;
+  }
+
+  .navbar-links a {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    padding: 6px 0;
+    transition: color 0.3s;
+  }
+
+  .navbar-links a:hover {
+    color: var(--primary-color); /* adjust based on your theme */
+  }
 }
