@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { Icon } from "@iconify/react";
+import fileIcon from "@iconify-icons/mdi/file-account"; // Resume icon
 import { FaHome, FaUser, FaFolderOpen, FaEnvelope } from 'react-icons/fa';
 import './Navbar.css';
 import logo from '../../images/my logo bgf.png'
@@ -8,10 +10,16 @@ import logo from '../../images/my logo bgf.png'
 const Navbar = ({ toggleTheme, theme }) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [animate, setAnimate] = useState(false);
+  const [showTooltip, setShowTooltip] = useState(false);
 
   const handleToggleMenu = () => setMenuOpen(!menuOpen);
   const closeMenu = () => setMenuOpen(false);
   const [glow, setGlow] = useState(false);
+
+  const toggleTooltip = () => {
+    setShowTooltip(!showTooltip);
+    setTimeout(() => setShowTooltip(false), 2000); // hide after 2s
+  };
 
   const handleThemeChange = () => {
     setAnimate(true);
@@ -63,6 +71,21 @@ const Navbar = ({ toggleTheme, theme }) => {
           <FaEnvelope className="nav-icon contacts-icon" />
           <span className="nav-text">Contact</span>
         </Link>
+
+        <li className="resume-link">
+          <a
+            href="/Ojo_Taiwo_John_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="resume-icon"
+            onClick={toggleTooltip}
+          >
+            <Icon icon="mdi:file-account" width="26" height="26" />
+            <span className={`resume-tooltip ${showTooltip ? "show" : ""}`}>
+              View Resume
+            </span>
+          </a>
+        </li>
 
         <span className="theme-icon" onClick={handleThemeChange}>
           <div className="tooltip">

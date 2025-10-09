@@ -110,6 +110,13 @@ function About() {
         <p className="about-connect">
           I’m always open to freelance projects, internships, or collaborations. Reach out via the <a href="/contact" className='connect-link'>Find Me ➡</a>
         </p>
+        <a
+          href="/Ojo_Taiwo_John_Resume.pdf"
+          download="Ojo_Taiwo_John_Resume.pdf"
+          className="resume-download"
+        >
+          📄 Download My Resume
+        </a>
       </div>
     </section >
   );

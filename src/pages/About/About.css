@@ -130,3 +130,17 @@
 .connect-link:hover {
   color: var(--project);
 }
+.resume-download {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 10px 20px;
+  background: var(--project);
+  color: var(--section-text);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.resume-download:hover {
+  background: var(--accent);
+}

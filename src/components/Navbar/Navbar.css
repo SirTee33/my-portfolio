@@ -228,3 +228,53 @@
     color: var(--primary-color); /* adjust based on your theme */
   }
 }
+
+/* Resume Tooltip (Desktop + Mobile) */
+.resume-link {
+  position: relative;
+  display: inline-block;
+}
+
+.resume-icon {
+  color: #0ea5e9;
+  transition: transform 0.3s, color 0.3s;
+  position: relative;
+}
+
+.resume-icon:hover {
+  color: #0284c7;
+  transform: scale(1.2);
+}
+
+.resume-tooltip {
+  visibility: hidden;
+  opacity: 0;
+  width: 100px;
+  background-color: #0ea5e9;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 6px;
+  position: absolute;
+  z-index: 10;
+  bottom: 130%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  transition: opacity 0.3s;
+}
+
+.resume-tooltip.show,
+.resume-icon:hover .resume-tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* On small screens, show tooltip below */
+@media (max-width: 768px) {
+  .resume-tooltip {
+    bottom: auto;
+    top: 130%;
+  }
+}
+
